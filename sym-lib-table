@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name KisonPill-rescue)(type Legacy)(uri ${KIPRJMOD}/KisonPill-rescue.lib)(options "")(descr ""))
+)

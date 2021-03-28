@@ -529,7 +529,7 @@ F 2 "Package_TO_SOT_SMD:SOT-23" H 3200 1225 50  0001 L CIN
 F 3 "http://www.unisonic.com.tw/datasheet/S8050.pdf" H 3000 1300 50  0001 L CNN
 F 4 "C18536" H 3000 1300 50  0001 C CNN "LCSC"
 	1    3000 1300
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	2450 750  2500 750 
@@ -545,17 +545,6 @@ Text Label 3100 1500 2    50   ~ 0
 IO0
 Text Label 3100 550  0    50   ~ 0
 EN
-$Comp
-L KisonCommon:ESP32JtagConnector U4
-U 1 1 605BFB02
-P 6750 650
-F 0 "U4" H 6760 775 50  0000 C CNN
-F 1 "ESP32JtagConnector" H 6760 684 50  0000 C CNN
-F 2 "KisonCommon:jtag1.27" H 6750 650 50  0001 C CNN
-F 3 "" H 6750 650 50  0001 C CNN
-	1    6750 650 
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+3.3V #PWR012
 U 1 1 605C4455
@@ -683,35 +672,12 @@ Text Label 9250 1800 0    50   ~ 0
 RXD0
 Text Label 9250 1600 0    50   ~ 0
 TXD0
-$Comp
-L power:GND #PWR011
-U 1 1 60603F1F
-P 6550 750
-F 0 "#PWR011" H 6550 500 50  0001 C CNN
-F 1 "GND" V 6555 622 50  0000 R CNN
-F 2 "" H 6550 750 50  0001 C CNN
-F 3 "" H 6550 750 50  0001 C CNN
-	1    6550 750 
-	0    1    1    0   
-$EndComp
-Text Label 7050 750  0    50   ~ 0
+Text Label 5760 910  0    50   ~ 0
 EN
-Wire Wire Line
-	6970 750  7050 750 
-Text Label 7050 820  0    50   ~ 0
+Text Label 5760 980  0    50   ~ 0
 IO12
-Wire Wire Line
-	6970 820  7050 820 
-Text Label 7050 880  0    50   ~ 0
+Text Label 5760 1050 0    50   ~ 0
 IO14
-Wire Wire Line
-	6970 880  7050 880 
-Text Label 6440 820  3    50   ~ 0
-IO13
-Wire Wire Line
-	6440 820  6550 820 
-Text Label 6550 880  3    50   ~ 0
-IO15
 $Comp
 L Regulator_Linear:AZ1117-3.3 U3
 U 1 1 6057DCFA
@@ -1295,10 +1261,144 @@ Text Label 10220 4200 0    50   ~ 0
 IO23
 Text Label 10220 4300 0    50   ~ 0
 IO4
-Text Label 10220 4400 0    50   ~ 0
-IO15
 Text Label 10220 4500 0    50   ~ 0
 IO5
 Text Label 10220 4600 0    50   ~ 0
 IO35
+Text Label 10220 4400 0    50   ~ 0
+IO32
+$Comp
+L power:+3V3 #PWR0124
+U 1 1 6059C21E
+P 6040 1120
+F 0 "#PWR0124" H 6040 970 50  0001 C CNN
+F 1 "+3V3" H 6055 1293 50  0000 C CNN
+F 2 "" H 6040 1120 50  0001 C CNN
+F 3 "" H 6040 1120 50  0001 C CNN
+	1    6040 1120
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6040 1120 5760 1120
+$Comp
+L Device:R R15
+U 1 1 605D512D
+P 5910 1190
+F 0 "R15" V 5910 1190 50  0000 C CNN
+F 1 "0" V 5990 1190 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5840 1190 50  0001 C CNN
+F 3 "~" H 5910 1190 50  0001 C CNN
+	1    5910 1190
+	0    1    1    0   
+$EndComp
+Text Label 6060 1190 0    50   ~ 0
+TXD0
+$Comp
+L KisonPill-rescue:ESP32FullConnector-KisonCommon U7
+U 1 1 605F623D
+P 5750 1880
+F 0 "U7" H 5560 2304 50  0000 C CNN
+F 1 "ESP32FullConnector" H 5560 2213 50  0000 C CNN
+F 2 "Connector_Molex:Molex_CLIK-Mate_502382-1270_1x12-1MP_P1.25mm_Vertical" H 5750 1880 50  0001 C CNN
+F 3 "" H 5750 1880 50  0001 C CNN
+	1    5750 1880
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 60603F1F
+P 5120 910
+F 0 "#PWR011" H 5120 660 50  0001 C CNN
+F 1 "GND" V 5125 782 50  0000 R CNN
+F 2 "" H 5120 910 50  0001 C CNN
+F 3 "" H 5120 910 50  0001 C CNN
+	1    5120 910 
+	-1   0    0    1   
+$EndComp
+Text Label 5340 980  2    50   ~ 0
+IO13
+Text Label 5340 1050 2    50   ~ 0
+IO15
+Wire Wire Line
+	5120 910  5340 910 
+Text Label 5340 1120 2    50   ~ 0
+EXT_5V
+Text Label 5340 1260 3    50   ~ 0
+IO0
+$Comp
+L Device:R R14
+U 1 1 605CA1B8
+P 5190 1190
+F 0 "R14" V 5190 1190 50  0000 C CNN
+F 1 "0" V 5270 1190 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5120 1190 50  0001 C CNN
+F 3 "~" H 5190 1190 50  0001 C CNN
+	1    5190 1190
+	0    1    1    0   
+$EndComp
+Text Label 5040 1190 2    50   ~ 0
+RXD0
+$Comp
+L KisonPill-rescue:ESP32FullConnector-KisonCommon U4
+U 1 1 60586A77
+P 5740 1120
+F 0 "U4" H 5550 1544 50  0000 C CNN
+F 1 "ESP32FullConnector-KisonCommon" H 5550 1453 50  0000 C CNN
+F 2 "KisonCommon:jtag1.27-12" H 5740 1120 50  0001 C CNN
+F 3 "" H 5740 1120 50  0001 C CNN
+	1    5740 1120
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 6060CCF1
+P 5130 1670
+F 0 "#PWR09" H 5130 1420 50  0001 C CNN
+F 1 "GND" V 5135 1542 50  0000 R CNN
+F 2 "" H 5130 1670 50  0001 C CNN
+F 3 "" H 5130 1670 50  0001 C CNN
+	1    5130 1670
+	-1   0    0    1   
+$EndComp
+Text Label 5350 1740 2    50   ~ 0
+IO13
+Text Label 5350 1810 2    50   ~ 0
+IO15
+Wire Wire Line
+	5130 1670 5350 1670
+Text Label 5350 1880 2    50   ~ 0
+EXT_5V
+Text Label 5350 2020 3    50   ~ 0
+IO0
+Text Label 5770 1670 0    50   ~ 0
+EN
+Text Label 5770 1740 0    50   ~ 0
+IO12
+Text Label 5770 1810 0    50   ~ 0
+IO14
+$Comp
+L power:+3V3 #PWR010
+U 1 1 6061353C
+P 6050 1880
+F 0 "#PWR010" H 6050 1730 50  0001 C CNN
+F 1 "+3V3" H 6065 2053 50  0000 C CNN
+F 2 "" H 6050 1880 50  0001 C CNN
+F 3 "" H 6050 1880 50  0001 C CNN
+	1    6050 1880
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 1880 5770 1880
+Wire Wire Line
+	5350 1950 5040 1950
+Wire Wire Line
+	5040 1950 5040 1190
+Wire Wire Line
+	5770 1950 6170 1950
+Wire Wire Line
+	6170 1950 6170 1190
+Wire Wire Line
+	6170 1190 6060 1190
+Text Notes 4400 610  0    50   ~ 0
+Should we isolate IO0 and rx,tx from Connector to on board?
 $EndSCHEMATC
