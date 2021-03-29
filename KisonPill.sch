@@ -554,7 +554,7 @@ F 1 "+3.3V" H 6615 1473 50  0000 C CNN
 F 2 "" H 6600 1300 50  0001 C CNN
 F 3 "" H 6600 1300 50  0001 C CNN
 	1    6600 1300
-	1    0    0    -1  
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R13
@@ -690,128 +690,6 @@ F 4 "C6862" H 1700 4600 50  0001 C CNN "LCSC"
 	1    1700 4600
 	1    0    0    -1  
 $EndComp
-$Comp
-L Sensor_Motion:ICM-20602 U5
-U 1 1 6050C466
-P 4360 2890
-F 0 "U5" H 4100 2340 50  0000 C CNN
-F 1 "ICM-20602" H 4050 2420 50  0000 C CNN
-F 2 "Package_LGA:LGA-16_3x3mm_P0.5mm_LayoutBorder3x5y" H 4360 3140 50  0001 C CNN
-F 3 "http://www.invensense.com/wp-content/uploads/2016/10/DS-000176-ICM-20602-v1.0.pdf" H 4410 3840 50  0001 C CNN
-	1    4360 2890
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR0110
-U 1 1 6052AC99
-P 3950 2040
-F 0 "#PWR0110" H 3950 1890 50  0001 C CNN
-F 1 "+3V3" H 3965 2213 50  0000 C CNN
-F 2 "" H 3950 2040 50  0001 C CNN
-F 3 "" H 3950 2040 50  0001 C CNN
-	1    3950 2040
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C9
-U 1 1 6052BCE2
-P 4230 2190
-F 0 "C9" H 4170 2120 50  0000 R CNN
-F 1 "0.1uf" H 4200 2290 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4268 2040 50  0001 C CNN
-F 3 "~" H 4230 2190 50  0001 C CNN
-F 4 "C1688" H 4230 2190 50  0001 C CNN "LCSC"
-	1    4230 2190
-	1    0    0    1   
-$EndComp
-$Comp
-L Device:C C8
-U 1 1 6052C3E4
-P 3950 2190
-F 0 "C8" H 3870 2110 50  0000 R CNN
-F 1 "10uf" H 3900 2290 50  0000 R CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 3988 2040 50  0001 C CNN
-F 3 "~" H 3950 2190 50  0001 C CNN
-F 4 "C319199" H 3950 2190 50  0001 C CNN "LCSC"
-	1    3950 2190
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	3950 2040 4230 2040
-Connection ~ 3950 2040
-Wire Wire Line
-	3950 2340 4230 2340
-$Comp
-L power:GND #PWR0111
-U 1 1 605357FB
-P 3950 2340
-F 0 "#PWR0111" H 3950 2090 50  0001 C CNN
-F 1 "GND" V 3955 2212 50  0000 R CNN
-F 2 "" H 3950 2340 50  0001 C CNN
-F 3 "" H 3950 2340 50  0001 C CNN
-	1    3950 2340
-	0    1    1    0   
-$EndComp
-Connection ~ 3950 2340
-Wire Wire Line
-	4230 2040 4360 2040
-Wire Wire Line
-	4360 2040 4360 2390
-Connection ~ 4230 2040
-Wire Wire Line
-	4460 2390 4360 2390
-Connection ~ 4360 2390
-$Comp
-L power:GND #PWR0112
-U 1 1 6053B8E1
-P 4860 2890
-F 0 "#PWR0112" H 4860 2640 50  0001 C CNN
-F 1 "GND" V 4865 2762 50  0000 R CNN
-F 2 "" H 4860 2890 50  0001 C CNN
-F 3 "" H 4860 2890 50  0001 C CNN
-	1    4860 2890
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:C C10
-U 1 1 605596C0
-P 4860 3140
-F 0 "C10" H 4745 3094 50  0000 R CNN
-F 1 "0.1uf" H 4745 3185 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4898 2990 50  0001 C CNN
-F 3 "~" H 4860 3140 50  0001 C CNN
-F 4 "C1688" H 4860 3140 50  0001 C CNN "LCSC"
-	1    4860 3140
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR0113
-U 1 1 6055A84C
-P 4860 3290
-F 0 "#PWR0113" H 4860 3040 50  0001 C CNN
-F 1 "GND" H 4865 3117 50  0000 C CNN
-F 2 "" H 4860 3290 50  0001 C CNN
-F 3 "" H 4860 3290 50  0001 C CNN
-	1    4860 3290
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0114
-U 1 1 6055D7A3
-P 4360 3390
-F 0 "#PWR0114" H 4360 3140 50  0001 C CNN
-F 1 "GND" H 4365 3217 50  0000 C CNN
-F 2 "" H 4360 3390 50  0001 C CNN
-F 3 "" H 4360 3390 50  0001 C CNN
-	1    4360 3390
-	1    0    0    -1  
-$EndComp
-Text Label 3860 2890 2    50   ~ 0
-IO23
-Text Label 3860 2990 2    50   ~ 0
-IO18
-Text Label 3860 2790 2    50   ~ 0
-IO19
 Text Label 9250 2800 0    50   ~ 0
 IO19
 Text Label 9250 2700 0    50   ~ 0
@@ -869,96 +747,96 @@ Text Label 8050 1700 2    50   ~ 0
 SENSOR_VP
 Text Label 8050 1800 2    50   ~ 0
 SENSOR_VN
-Text Label 5930 3620 0    50   ~ 0
+Text Label 5170 3600 0    50   ~ 0
 EN
-Text Label 5930 3720 0    50   ~ 0
+Text Label 5170 3700 0    50   ~ 0
 SENSOR_VP
-Text Label 5930 3820 0    50   ~ 0
+Text Label 5170 3800 0    50   ~ 0
 SENSOR_VN
-Text Label 5930 3920 0    50   ~ 0
+Text Label 5170 3900 0    50   ~ 0
 IO34
-Text Label 5930 4020 0    50   ~ 0
+Text Label 5170 4000 0    50   ~ 0
 IO35
-Text Label 5930 4120 0    50   ~ 0
+Text Label 5170 4100 0    50   ~ 0
 IO32
-Text Label 5930 4220 0    50   ~ 0
+Text Label 5170 4200 0    50   ~ 0
 IO33
-Text Label 5930 4320 0    50   ~ 0
+Text Label 5170 4300 0    50   ~ 0
 IO25
-Text Label 5930 4420 0    50   ~ 0
+Text Label 5170 4400 0    50   ~ 0
 IO26
-Text Label 5930 4520 0    50   ~ 0
+Text Label 5170 4500 0    50   ~ 0
 IO27
-Text Label 5930 4620 0    50   ~ 0
+Text Label 5170 4600 0    50   ~ 0
 IO14
-Text Label 5930 4720 0    50   ~ 0
+Text Label 5170 4700 0    50   ~ 0
 IO12
 $Comp
 L power:GND #PWR0117
 U 1 1 60538B7C
-P 5930 4820
-F 0 "#PWR0117" H 5930 4570 50  0001 C CNN
-F 1 "GND" V 5935 4692 50  0000 R CNN
-F 2 "" H 5930 4820 50  0001 C CNN
-F 3 "" H 5930 4820 50  0001 C CNN
-	1    5930 4820
+P 5170 4800
+F 0 "#PWR0117" H 5170 4550 50  0001 C CNN
+F 1 "GND" V 5175 4672 50  0000 R CNN
+F 2 "" H 5170 4800 50  0001 C CNN
+F 3 "" H 5170 4800 50  0001 C CNN
+	1    5170 4800
 	0    -1   -1   0   
 $EndComp
-Text Label 5930 4920 0    50   ~ 0
+Text Label 5170 4900 0    50   ~ 0
 IO13
 Text Label 8050 2900 2    50   ~ 0
 SD2
-Text Label 5930 5020 0    50   ~ 0
+Text Label 5170 5000 0    50   ~ 0
 SD2
 Text Label 8050 3000 2    50   ~ 0
 SD3
-Text Label 5930 5120 0    50   ~ 0
+Text Label 5170 5100 0    50   ~ 0
 SD3
 Text Label 8050 3200 2    50   ~ 0
 CMD
-Text Label 5930 5220 0    50   ~ 0
+Text Label 5170 5200 0    50   ~ 0
 CMD
-Text Label 6730 3610 0    50   ~ 0
-IO23
 Text Label 6730 3710 0    50   ~ 0
-IO22
+IO23
 Text Label 6730 3810 0    50   ~ 0
-TXD0
+IO22
 Text Label 6730 3910 0    50   ~ 0
-RXD0
+TXD0
 Text Label 6730 4010 0    50   ~ 0
-IO21
+RXD0
 Text Label 6730 4110 0    50   ~ 0
+IO21
+Text Label 6730 4310 0    50   ~ 0
 IO19
-Text Label 6730 4210 0    50   ~ 0
+Text Label 6730 4410 0    50   ~ 0
 IO18
 Text Label 9250 2000 0    50   ~ 0
 IO5
-Text Label 6730 4310 0    50   ~ 0
-IO5
-Text Label 6730 4410 0    50   ~ 0
-IO17
 Text Label 6730 4510 0    50   ~ 0
-IO16
+IO5
 Text Label 6730 4610 0    50   ~ 0
-IO4
+IO17
 Text Label 6730 4710 0    50   ~ 0
-IO0
+IO16
 Text Label 6730 4810 0    50   ~ 0
-IO2
+IO4
 Text Label 6730 4910 0    50   ~ 0
+IO0
+Text Label 6730 5010 0    50   ~ 0
+IO2
+Text Label 6730 5110 0    50   ~ 0
 IO15
 Text Label 8050 2800 2    50   ~ 0
 SD1
-Text Label 6730 5010 0    50   ~ 0
+Text Label 6730 5210 0    50   ~ 0
 SD1
 Text Label 8050 2700 2    50   ~ 0
 SD0
-Text Label 6730 5110 0    50   ~ 0
+Text Label 6730 5310 0    50   ~ 0
 SD0
 Text Label 8050 3100 2    50   ~ 0
 CLK
-Text Label 6730 5210 0    50   ~ 0
+Text Label 6730 5410 0    50   ~ 0
 CLK
 $Comp
 L Device:C C11
@@ -1048,8 +926,6 @@ Wire Wire Line
 	10720 1740 10720 2060
 Wire Wire Line
 	10720 2060 10620 2060
-Text Label 3860 3090 2    50   ~ 0
-IO16
 Text Label 3710 6260 0    50   ~ 0
 VBUS
 $Comp
@@ -1079,194 +955,11 @@ U 1 1 60546BFD
 P 3710 6760
 F 0 "U6" H 3710 7441 50  0000 C CNN
 F 1 "USBLC6-2SC6-Power_Protection" H 3710 7350 50  0000 C CNN
-F 2 "KisonCommon:USBLC6-2P6" H 2960 7160 50  0001 C CNN
+F 2 "KisonCommon:USBLC6-2P6-SOT666" H 2960 7160 50  0001 C CNN
 F 3 "" H 3910 7110 50  0001 C CNN
 	1    3710 6760
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x17_Male J2
-U 1 1 60584704
-P 5730 4420
-F 0 "J2" H 5838 5401 50  0000 C CNN
-F 1 "Conn_01x17_Male" H 5838 5310 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x17_P2.54mm_Vertical" H 5730 4420 50  0001 C CNN
-F 3 "~" H 5730 4420 50  0001 C CNN
-	1    5730 4420
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x17_Male J3
-U 1 1 60588C86
-P 6530 4410
-F 0 "J3" H 6638 5391 50  0000 C CNN
-F 1 "Conn_01x17_Male" H 6638 5300 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x17_P2.54mm_Vertical" H 6530 4410 50  0001 C CNN
-F 3 "~" H 6530 4410 50  0001 C CNN
-	1    6530 4410
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x03_Male J4
-U 1 1 605C7434
-P 7390 4780
-F 0 "J4" V 7270 4750 50  0000 C CNN
-F 1 "Conn_01x03_Male" V 7340 4780 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7390 4780 50  0001 C CNN
-F 3 "~" H 7390 4780 50  0001 C CNN
-	1    7390 4780
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x03_Male J6
-U 1 1 605C82F2
-P 8210 4970
-F 0 "J6" H 8318 5251 50  0000 C CNN
-F 1 "Conn_01x03_Male" H 8318 5160 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8210 4970 50  0001 C CNN
-F 3 "~" H 8210 4970 50  0001 C CNN
-	1    8210 4970
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0108
-U 1 1 605C9445
-P 7680 5560
-F 0 "#PWR0108" H 7680 5310 50  0001 C CNN
-F 1 "GND" V 7685 5432 50  0000 R CNN
-F 2 "" H 7680 5560 50  0001 C CNN
-F 3 "" H 7680 5560 50  0001 C CNN
-	1    7680 5560
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0109
-U 1 1 605C9917
-P 7680 5460
-F 0 "#PWR0109" H 7680 5210 50  0001 C CNN
-F 1 "GND" V 7685 5332 50  0000 R CNN
-F 2 "" H 7680 5460 50  0001 C CNN
-F 3 "" H 7680 5460 50  0001 C CNN
-	1    7680 5460
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0116
-U 1 1 605C9C85
-P 7680 5360
-F 0 "#PWR0116" H 7680 5110 50  0001 C CNN
-F 1 "GND" V 7685 5232 50  0000 R CNN
-F 2 "" H 7680 5360 50  0001 C CNN
-F 3 "" H 7680 5360 50  0001 C CNN
-	1    7680 5360
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:Conn_01x04_Male J5
-U 1 1 605CC8D1
-P 7480 5460
-F 0 "J5" H 7588 5741 50  0000 C CNN
-F 1 "Conn_01x04_Male" H 7588 5650 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7480 5460 50  0001 C CNN
-F 3 "~" H 7480 5460 50  0001 C CNN
-	1    7480 5460
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0118
-U 1 1 605D0BB0
-P 7680 5660
-F 0 "#PWR0118" H 7680 5410 50  0001 C CNN
-F 1 "GND" V 7685 5532 50  0000 R CNN
-F 2 "" H 7680 5660 50  0001 C CNN
-F 3 "" H 7680 5660 50  0001 C CNN
-	1    7680 5660
-	0    -1   -1   0   
-$EndComp
-Text Label 8410 4870 0    50   ~ 0
-EXT_5V
-Text Label 8410 4970 0    50   ~ 0
-EXT_5V
-Text Label 8410 5070 0    50   ~ 0
-EXT_5V
-$Comp
-L Connector:Conn_01x08_Male J7
-U 1 1 605D845E
-P 10020 4200
-F 0 "J7" H 10128 4681 50  0000 C CNN
-F 1 "Conn_01x08_Male" H 10128 4590 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 10020 4200 50  0001 C CNN
-F 3 "~" H 10020 4200 50  0001 C CNN
-	1    10020 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0119
-U 1 1 605DD56B
-P 7590 4680
-F 0 "#PWR0119" H 7590 4530 50  0001 C CNN
-F 1 "+3.3V" H 7605 4853 50  0000 C CNN
-F 2 "" H 7590 4680 50  0001 C CNN
-F 3 "" H 7590 4680 50  0001 C CNN
-	1    7590 4680
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0120
-U 1 1 605E0D66
-P 7590 4780
-F 0 "#PWR0120" H 7590 4630 50  0001 C CNN
-F 1 "+3.3V" H 7605 4953 50  0000 C CNN
-F 2 "" H 7590 4780 50  0001 C CNN
-F 3 "" H 7590 4780 50  0001 C CNN
-	1    7590 4780
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+3.3V #PWR0121
-U 1 1 605E11B5
-P 7590 4880
-F 0 "#PWR0121" H 7590 4730 50  0001 C CNN
-F 1 "+3.3V" H 7605 5053 50  0000 C CNN
-F 2 "" H 7590 4880 50  0001 C CNN
-F 3 "" H 7590 4880 50  0001 C CNN
-	1    7590 4880
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+3.3V #PWR0122
-U 1 1 6068760F
-P 10220 4000
-F 0 "#PWR0122" H 10220 3850 50  0001 C CNN
-F 1 "+3.3V" H 10235 4173 50  0000 C CNN
-F 2 "" H 10220 4000 50  0001 C CNN
-F 3 "" H 10220 4000 50  0001 C CNN
-	1    10220 4000
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR0123
-U 1 1 6068BE7B
-P 10220 3900
-F 0 "#PWR0123" H 10220 3650 50  0001 C CNN
-F 1 "GND" H 10225 3727 50  0000 C CNN
-F 2 "" H 10220 3900 50  0001 C CNN
-F 3 "" H 10220 3900 50  0001 C CNN
-	1    10220 3900
-	0    -1   -1   0   
-$EndComp
-Text Label 10220 4100 0    50   ~ 0
-IO18
-Text Label 10220 4200 0    50   ~ 0
-IO23
-Text Label 10220 4300 0    50   ~ 0
-IO4
-Text Label 10220 4500 0    50   ~ 0
-IO5
-Text Label 10220 4600 0    50   ~ 0
-IO35
-Text Label 10220 4400 0    50   ~ 0
-IO32
 $Comp
 L power:+3V3 #PWR0124
 U 1 1 6059C21E
@@ -1283,18 +976,18 @@ Wire Wire Line
 $Comp
 L Device:R R15
 U 1 1 605D512D
-P 5910 1190
-F 0 "R15" V 5910 1190 50  0000 C CNN
-F 1 "0" V 5990 1190 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 5840 1190 50  0001 C CNN
-F 3 "~" H 5910 1190 50  0001 C CNN
-	1    5910 1190
+P 6320 1190
+F 0 "R15" V 6320 1190 50  0000 C CNN
+F 1 "0" V 6400 1190 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6250 1190 50  0001 C CNN
+F 3 "~" H 6320 1190 50  0001 C CNN
+	1    6320 1190
 	0    1    1    0   
 $EndComp
-Text Label 6060 1190 0    50   ~ 0
+Text Label 6470 1190 0    50   ~ 0
 TXD0
 $Comp
-L KisonPill-rescue:ESP32FullConnector-KisonCommon U7
+L KisonCommon:ESP32FullConnector U7
 U 1 1 605F623D
 P 5750 1880
 F 0 "U7" H 5560 2304 50  0000 C CNN
@@ -1321,25 +1014,12 @@ Text Label 5340 1050 2    50   ~ 0
 IO15
 Wire Wire Line
 	5120 910  5340 910 
-Text Label 5340 1120 2    50   ~ 0
-EXT_5V
 Text Label 5340 1260 3    50   ~ 0
 IO0
-$Comp
-L Device:R R14
-U 1 1 605CA1B8
-P 5190 1190
-F 0 "R14" V 5190 1190 50  0000 C CNN
-F 1 "0" V 5270 1190 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 5120 1190 50  0001 C CNN
-F 3 "~" H 5190 1190 50  0001 C CNN
-	1    5190 1190
-	0    1    1    0   
-$EndComp
-Text Label 5040 1190 2    50   ~ 0
+Text Label 4740 1190 2    50   ~ 0
 RXD0
 $Comp
-L KisonPill-rescue:ESP32FullConnector-KisonCommon U4
+L KisonCommon:ESP32FullConnector U4
 U 1 1 60586A77
 P 5740 1120
 F 0 "U4" H 5550 1544 50  0000 C CNN
@@ -1366,8 +1046,6 @@ Text Label 5350 1810 2    50   ~ 0
 IO15
 Wire Wire Line
 	5130 1670 5350 1670
-Text Label 5350 1880 2    50   ~ 0
-EXT_5V
 Text Label 5350 2020 3    50   ~ 0
 IO0
 Text Label 5770 1670 0    50   ~ 0
@@ -1390,15 +1068,87 @@ $EndComp
 Wire Wire Line
 	6050 1880 5770 1880
 Wire Wire Line
-	5350 1950 5040 1950
-Wire Wire Line
-	5040 1950 5040 1190
-Wire Wire Line
 	5770 1950 6170 1950
 Wire Wire Line
 	6170 1950 6170 1190
-Wire Wire Line
-	6170 1190 6060 1190
 Text Notes 4400 610  0    50   ~ 0
 Should we isolate IO0 and rx,tx from Connector to on board?
+$Comp
+L Device:R R14
+U 1 1 605CA1B8
+P 4890 1190
+F 0 "R14" V 4890 1190 50  0000 C CNN
+F 1 "0" V 4970 1190 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4820 1190 50  0001 C CNN
+F 3 "~" H 4890 1190 50  0001 C CNN
+	1    4890 1190
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5040 1190 5340 1190
+Connection ~ 6170 1190
+Wire Wire Line
+	5760 1190 6170 1190
+Connection ~ 5040 1190
+Wire Wire Line
+	5040 1950 5040 1190
+Wire Wire Line
+	5350 1950 5040 1950
+$Comp
+L Connector:Conn_01x19_Male J3
+U 1 1 6062632A
+P 6530 4510
+F 0 "J3" H 6638 5591 50  0000 C CNN
+F 1 "Conn_01x19_Male" H 6638 5500 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x19_P2.54mm_Vertical" H 6530 4510 50  0001 C CNN
+F 3 "~" H 6530 4510 50  0001 C CNN
+	1    6530 4510
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x19_Male J2
+U 1 1 60628660
+P 4970 4400
+F 0 "J2" H 5078 5481 50  0000 C CNN
+F 1 "Conn_01x19_Male" H 5078 5390 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x19_P2.54mm_Vertical" H 4970 4400 50  0001 C CNN
+F 3 "~" H 4970 4400 50  0001 C CNN
+	1    4970 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0108
+U 1 1 60652542
+P 5170 3500
+F 0 "#PWR0108" H 5170 3350 50  0001 C CNN
+F 1 "+3V3" V 5185 3628 50  0000 L CNN
+F 2 "" H 5170 3500 50  0001 C CNN
+F 3 "" H 5170 3500 50  0001 C CNN
+	1    5170 3500
+	0    1    1    0   
+$EndComp
+Text Label 5170 5300 0    50   ~ 0
+EXT_5V
+$Comp
+L power:GND #PWR0109
+U 1 1 606641DC
+P 6730 3610
+F 0 "#PWR0109" H 6730 3360 50  0001 C CNN
+F 1 "GND" V 6735 3482 50  0000 R CNN
+F 2 "" H 6730 3610 50  0001 C CNN
+F 3 "" H 6730 3610 50  0001 C CNN
+	1    6730 3610
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 6066DADE
+P 6730 4210
+F 0 "#PWR0110" H 6730 3960 50  0001 C CNN
+F 1 "GND" V 6735 4082 50  0000 R CNN
+F 2 "" H 6730 4210 50  0001 C CNN
+F 3 "" H 6730 4210 50  0001 C CNN
+	1    6730 4210
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
