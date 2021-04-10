@@ -145,7 +145,7 @@ L Device:C C1
 U 1 1 6052AFDC
 P 1100 950
 F 0 "C1" H 1215 996 50  0000 L CNN
-F 1 "4.7uf/6.3v" H 1215 905 50  0000 L CNN
+F 1 "4.7uf/6.3v" H 650 850 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1138 800 50  0001 C CNN
 F 3 "~" H 1100 950 50  0001 C CNN
 F 4 "C907730" H 1100 950 50  0001 C CNN "LCSC"
@@ -193,46 +193,18 @@ Connection ~ 1450 800
 Wire Wire Line
 	1800 1200 1900 1200
 Connection ~ 1800 1200
-Text Label 1250 3000 0    50   ~ 0
-TXD0
-Text Label 1250 3150 0    50   ~ 0
-RXD0
-$Comp
-L Device:R R2
-U 1 1 6052F69F
-P 1000 3150
-F 0 "R2" V 1000 3150 50  0000 C CNN
-F 1 "0" V 884 3150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 930 3150 50  0001 C CNN
-F 3 "~" H 1000 3150 50  0001 C CNN
-F 4 "C429667" H 1000 3150 50  0001 C CNN "LCSC"
-	1    1000 3150
-	0    -1   -1   0   
-$EndComp
 $Comp
 L Device:R R3
 U 1 1 6052FB68
-P 1000 3000
-F 0 "R3" V 1000 3000 50  0000 C CNN
-F 1 "0" V 900 3000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 930 3000 50  0001 C CNN
-F 3 "~" H 1000 3000 50  0001 C CNN
-F 4 "C429667" H 1000 3000 50  0001 C CNN "LCSC"
-	1    1000 3000
+P 1070 2990
+F 0 "R3" V 1070 2990 50  0000 C CNN
+F 1 "0" V 970 2990 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1000 2990 50  0001 C CNN
+F 3 "~" H 1070 2990 50  0001 C CNN
+F 4 "C429667" H 1070 2990 50  0001 C CNN "LCSC"
+	1    1070 2990
 	0    1    1    0   
 $EndComp
-Text Label 750  3150 2    50   ~ 0
-TXD
-Text Label 750  3000 2    50   ~ 0
-RXD
-Wire Wire Line
-	1250 3150 1150 3150
-Wire Wire Line
-	1250 3000 1150 3000
-Wire Wire Line
-	850  3150 750  3150
-Wire Wire Line
-	850  3000 750  3000
 $Comp
 L power:GND #PWR0107
 U 1 1 6053538D
@@ -244,10 +216,6 @@ F 3 "" H 1900 3800 50  0001 C CNN
 	1    1900 3800
 	0    -1   -1   0   
 $EndComp
-Text Label 2700 1700 0    50   ~ 0
-TXD
-Text Label 2700 1600 0    50   ~ 0
-RXD
 Wire Wire Line
 	2400 1600 2700 1600
 Wire Wire Line
@@ -656,16 +624,10 @@ $EndComp
 Connection ~ 9450 1200
 Text Label 8050 1500 2    50   ~ 0
 EN
-Text Label 9250 1800 0    50   ~ 0
-RXD0
-Text Label 9250 1600 0    50   ~ 0
-TXD0
 Text Label 5760 910  0    50   ~ 0
 EN
-Text Label 5760 980  0    50   ~ 0
+Text Label 5760 1000 0    50   ~ 0
 IO12
-Text Label 5760 1050 0    50   ~ 0
-IO14
 $Comp
 L Regulator_Linear:AZ1117-3.3 U3
 U 1 1 6057DCFA
@@ -788,10 +750,6 @@ Text Label 6730 3710 0    50   ~ 0
 IO23
 Text Label 6730 3810 0    50   ~ 0
 IO22
-Text Label 6730 3910 0    50   ~ 0
-TXD0
-Text Label 6730 4010 0    50   ~ 0
-RXD0
 Text Label 6730 4110 0    50   ~ 0
 IO21
 Text Label 6730 4310 0    50   ~ 0
@@ -949,38 +907,12 @@ F 3 "" H 3910 7110 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR0124
-U 1 1 6059C21E
-P 6040 1120
-F 0 "#PWR0124" H 6040 970 50  0001 C CNN
-F 1 "+3V3" H 6055 1293 50  0000 C CNN
-F 2 "" H 6040 1120 50  0001 C CNN
-F 3 "" H 6040 1120 50  0001 C CNN
-	1    6040 1120
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6040 1120 5760 1120
-$Comp
-L Device:R R15
-U 1 1 605D512D
-P 6320 1190
-F 0 "R15" V 6320 1190 50  0000 C CNN
-F 1 "0" V 6400 1190 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6250 1190 50  0001 C CNN
-F 3 "~" H 6320 1190 50  0001 C CNN
-	1    6320 1190
-	0    1    1    0   
-$EndComp
-Text Label 6470 1190 0    50   ~ 0
-TXD0
-$Comp
 L KisonCommon:ESP32FullConnector U7
 U 1 1 605F623D
 P 5750 1880
 F 0 "U7" H 5560 2304 50  0000 C CNN
 F 1 "ESP32FullConnector" H 5560 2213 50  0000 C CNN
-F 2 "Connector_Molex:Molex_CLIK-Mate_502382-1270_1x12-1MP_P1.25mm_Vertical" H 5750 1880 50  0001 C CNN
+F 2 "Connector_Molex:Molex_CLIK-Mate_502382-1070_1x10-1MP_P1.25mm_Vertical" H 5750 1880 50  0001 C CNN
 F 3 "" H 5750 1880 50  0001 C CNN
 	1    5750 1880
 	1    0    0    -1  
@@ -996,23 +928,21 @@ F 3 "" H 5120 910 50  0001 C CNN
 	1    5120 910 
 	-1   0    0    1   
 $EndComp
-Text Label 5340 980  2    50   ~ 0
+Text Label 5340 1000 2    50   ~ 0
 IO13
-Text Label 5340 1050 2    50   ~ 0
+Text Label 5340 1090 2    50   ~ 0
 IO15
 Wire Wire Line
 	5120 910  5340 910 
-Text Label 5340 1260 3    50   ~ 0
+Text Label 5340 1180 2    50   ~ 0
 IO0
-Text Label 4740 1190 2    50   ~ 0
-RXD0
 $Comp
 L KisonCommon:ESP32FullConnector U4
 U 1 1 60586A77
 P 5740 1120
 F 0 "U4" H 5550 1544 50  0000 C CNN
 F 1 "ESP32FullConnector-KisonCommon" H 5550 1453 50  0000 C CNN
-F 2 "KisonCommon:jtag1.27-12" H 5740 1120 50  0001 C CNN
+F 2 "KisonCommon:jtag1.27-10" H 5740 1120 50  0001 C CNN
 F 3 "" H 5740 1120 50  0001 C CNN
 	1    5740 1120
 	1    0    0    -1  
@@ -1028,60 +958,39 @@ F 3 "" H 5130 1670 50  0001 C CNN
 	1    5130 1670
 	-1   0    0    1   
 $EndComp
-Text Label 5350 1740 2    50   ~ 0
+Text Label 5350 1760 2    50   ~ 0
 IO13
-Text Label 5350 1810 2    50   ~ 0
+Text Label 5350 1850 2    50   ~ 0
 IO15
 Wire Wire Line
 	5130 1670 5350 1670
-Text Label 5350 2020 3    50   ~ 0
+Text Label 5350 1940 2    50   ~ 0
 IO0
 Text Label 5770 1670 0    50   ~ 0
 EN
-Text Label 5770 1740 0    50   ~ 0
+Text Label 5770 1760 0    50   ~ 0
 IO12
-Text Label 5770 1810 0    50   ~ 0
+Text Label 5770 1850 0    50   ~ 0
 IO14
 $Comp
 L power:+3V3 #PWR010
 U 1 1 6061353C
-P 6050 1880
-F 0 "#PWR010" H 6050 1730 50  0001 C CNN
-F 1 "+3V3" H 6065 2053 50  0000 C CNN
-F 2 "" H 6050 1880 50  0001 C CNN
-F 3 "" H 6050 1880 50  0001 C CNN
-	1    6050 1880
+P 6050 1940
+F 0 "#PWR010" H 6050 1790 50  0001 C CNN
+F 1 "+3V3" H 6065 2113 50  0000 C CNN
+F 2 "" H 6050 1940 50  0001 C CNN
+F 3 "" H 6050 1940 50  0001 C CNN
+	1    6050 1940
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6050 1880 5770 1880
+	6050 1940 5770 1940
 Wire Wire Line
-	5770 1950 6170 1950
-Wire Wire Line
-	6170 1950 6170 1190
+	5770 2030 6170 2030
 Text Notes 4400 610  0    50   ~ 0
 Should we isolate IO0 and rx,tx from Connector to on board?
-$Comp
-L Device:R R14
-U 1 1 605CA1B8
-P 4890 1190
-F 0 "R14" V 4890 1190 50  0000 C CNN
-F 1 "0" V 4970 1190 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4820 1190 50  0001 C CNN
-F 3 "~" H 4890 1190 50  0001 C CNN
-	1    4890 1190
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	5040 1190 5340 1190
-Connection ~ 6170 1190
-Wire Wire Line
-	5760 1190 6170 1190
-Connection ~ 5040 1190
-Wire Wire Line
-	5040 1950 5040 1190
-Wire Wire Line
-	5350 1950 5040 1950
+	5350 2030 5040 2030
 $Comp
 L Connector:Conn_01x19_Male J3
 U 1 1 6062632A
@@ -1151,4 +1060,87 @@ F 4 "C149898" H 2650 750 50  0001 C CNN "LCSC"
 	1    2650 750 
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	5340 1270 5040 1270
+Connection ~ 5040 1270
+Wire Wire Line
+	5040 1270 5040 2030
+$Comp
+L Device:R R14
+U 1 1 605CA1B8
+P 4890 1270
+F 0 "R14" V 4890 1270 50  0000 C CNN
+F 1 "0" V 4970 1270 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4820 1270 50  0001 C CNN
+F 3 "~" H 4890 1270 50  0001 C CNN
+	1    4890 1270
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5760 1270 6170 1270
+Wire Wire Line
+	6170 1270 6170 2030
+$Comp
+L Device:R R15
+U 1 1 605D512D
+P 6320 1270
+F 0 "R15" V 6320 1270 50  0000 C CNN
+F 1 "0" V 6400 1270 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6250 1270 50  0001 C CNN
+F 3 "~" H 6320 1270 50  0001 C CNN
+	1    6320 1270
+	0    1    1    0   
+$EndComp
+Connection ~ 6170 1270
+Wire Wire Line
+	6040 1180 5760 1180
+$Comp
+L power:+3V3 #PWR0124
+U 1 1 6059C21E
+P 6040 1180
+F 0 "#PWR0124" H 6040 1030 50  0001 C CNN
+F 1 "+3V3" H 6055 1353 50  0000 C CNN
+F 2 "" H 6040 1180 50  0001 C CNN
+F 3 "" H 6040 1180 50  0001 C CNN
+	1    6040 1180
+	1    0    0    -1  
+$EndComp
+Text Label 5760 1090 0    50   ~ 0
+IO14
+Text Label 4740 1270 2    50   ~ 0
+ESPRX
+Text Label 1220 3130 0    50   ~ 0
+ESPRX
+Text Label 9250 1800 0    50   ~ 0
+ESPRX
+Text Label 9250 1600 0    50   ~ 0
+ESPTX
+Text Label 6470 1270 0    50   ~ 0
+ESPTX
+Text Label 1220 2990 0    50   ~ 0
+ESPTX
+Text Label 920  2990 2    50   ~ 0
+CP2102RX
+$Comp
+L Device:R R2
+U 1 1 6052F69F
+P 1070 3130
+F 0 "R2" V 1070 3130 50  0000 C CNN
+F 1 "0" V 954 3130 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1000 3130 50  0001 C CNN
+F 3 "~" H 1070 3130 50  0001 C CNN
+F 4 "C429667" H 1070 3130 50  0001 C CNN "LCSC"
+	1    1070 3130
+	0    -1   -1   0   
+$EndComp
+Text Label 920  3130 2    50   ~ 0
+CP2102TX
+Text Label 2700 1700 0    50   ~ 0
+CP2102TX
+Text Label 2700 1600 0    50   ~ 0
+CP2102RX
+Text Label 6730 3910 0    50   ~ 0
+ESPTX
+Text Label 6730 4010 0    50   ~ 0
+ESPRX
 $EndSCHEMATC
