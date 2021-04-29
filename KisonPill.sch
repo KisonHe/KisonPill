@@ -485,10 +485,6 @@ Wire Wire Line
 	2450 750  2450 1100
 Wire Wire Line
 	2450 1100 3100 1100
-Text Label 3100 1500 2    50   ~ 0
-IO0
-Text Label 3100 550  0    50   ~ 0
-EN
 $Comp
 L power:+3.3V #PWR012
 U 1 1 605C4455
@@ -922,8 +918,6 @@ Text Label 5340 1090 2    50   ~ 0
 IO15
 Wire Wire Line
 	5120 910  5340 910 
-Text Label 5340 1180 2    50   ~ 0
-IO0
 $Comp
 L KisonCommon:ESP32FullConnector U4
 U 1 1 60586A77
@@ -952,8 +946,6 @@ Text Label 5350 1850 2    50   ~ 0
 IO15
 Wire Wire Line
 	5130 1670 5350 1670
-Text Label 5350 1940 2    50   ~ 0
-IO0
 Text Label 5770 1670 0    50   ~ 0
 EN
 Text Label 5770 1760 0    50   ~ 0
@@ -1091,22 +1083,9 @@ Text Label 5040 1270 2    50   ~ 0
 FT2232TX
 Text Label 6170 1270 0    50   ~ 0
 FT2232RX
-$Comp
-L Switch:SW_Push_DPDT SW3
-U 1 1 6083AE64
-P 4110 2570
-F 0 "SW3" H 4110 3055 50  0000 C CNN
-F 1 "SW_Push_DPDT" H 4110 2964 50  0000 C CNN
-F 2 "KisonCommon:MSS22D18G2" H 4110 2770 50  0001 C CNN
-F 3 "~" H 4110 2770 50  0001 C CNN
-	1    4110 2570
-	1    0    0    -1  
-$EndComp
-Text Label 3910 2370 2    50   ~ 0
+Text Label 3360 3840 2    50   ~ 0
 ESPRX
-Text Label 4310 2270 0    50   ~ 0
-CP2102TX
-Text Label 4310 2470 0    50   ~ 0
+Text Label 3660 3840 0    50   ~ 0
 FT2232TX
 Text Label 920  3110 2    50   ~ 0
 FT2232RX
@@ -1136,4 +1115,49 @@ F 4 "C429667" H 1070 2990 50  0001 C CNN "LCSC"
 $EndComp
 Text Label 1220 3110 0    50   ~ 0
 ESPTX
+$Comp
+L Switch:SW_DIP_x04 SW3
+U 1 1 609A3C08
+P 3500 3520
+F 0 "SW3" H 3500 3987 50  0000 C CNN
+F 1 "SW_DIP_x04" H 3500 3896 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx04_Slide_Copal_CHS-04B_W7.62mm_P1.27mm" H 3500 3520 50  0001 C CNN
+F 3 "~" H 3500 3520 50  0001 C CNN
+	1    3500 3520
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3800 3620
+NoConn ~ 3200 3620
+Text Label 5350 1940 2    50   ~ 0
+IO0
+Text Label 5340 1180 2    50   ~ 0
+IO0
+Text Label 3100 550  0    50   ~ 0
+CP2102_EN
+Text Label 3100 1500 0    50   ~ 0
+CP2102_IO0
+Text Label 3800 3320 0    50   ~ 0
+CP2102_IO0
+Text Label 3200 3320 2    50   ~ 0
+IO0
+Text Label 3800 3420 0    50   ~ 0
+CP2102_EN
+Text Label 3200 3420 2    50   ~ 0
+EN
+Text Label 3200 3520 2    50   ~ 0
+ESPRX
+Text Label 3800 3520 0    50   ~ 0
+CP2102TX
+$Comp
+L Device:R R14
+U 1 1 608CD0E9
+P 3510 3840
+F 0 "R14" V 3510 3840 50  0000 C CNN
+F 1 "0" V 3610 3850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3440 3840 50  0001 C CNN
+F 3 "~" H 3510 3840 50  0001 C CNN
+F 4 "C429667" H 3510 3840 50  0001 C CNN "LCSC"
+	1    3510 3840
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
