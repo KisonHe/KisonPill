@@ -310,123 +310,41 @@ F 3 "" H 2700 2300 50  0001 C CNN
 	1    2700 2300
 	0    -1   -1   0   
 $EndComp
-Text Label 950  4450 0    50   ~ 0
-EXT_5V
-$Comp
-L Device:C C3
-U 1 1 60582F35
-P 950 4800
-F 0 "C3" H 1065 4846 50  0000 L CNN
-F 1 "22uf" H 1065 4755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 988 4650 50  0001 C CNN
-F 3 "~" H 950 4800 50  0001 C CNN
-F 4 "C319197" H 950 4800 50  0001 C CNN "LCSC"
-	1    950  4800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR02
-U 1 1 6058326D
-P 950 4950
-F 0 "#PWR02" H 950 4700 50  0001 C CNN
-F 1 "GND" H 955 4777 50  0000 C CNN
-F 2 "" H 950 4950 50  0001 C CNN
-F 3 "" H 950 4950 50  0001 C CNN
-	1    950  4950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	950  4450 950  4650
 $Comp
 L Device:R R6
 U 1 1 60583C14
-P 600 4600
-F 0 "R6" H 670 4646 50  0000 L CNN
-F 1 "2k" H 670 4555 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 530 4600 50  0001 C CNN
-F 3 "~" H 600 4600 50  0001 C CNN
-F 4 "C226705" H 600 4600 50  0001 C CNN "LCSC"
-	1    600  4600
+P 740 4500
+F 0 "R6" H 810 4546 50  0000 L CNN
+F 1 "2k" H 810 4455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 670 4500 50  0001 C CNN
+F 3 "~" H 740 4500 50  0001 C CNN
+F 4 "C226705" H 740 4500 50  0001 C CNN "LCSC"
+	1    740  4500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D5
 U 1 1 60584547
-P 600 4900
-F 0 "D5" V 639 4782 50  0000 R CNN
-F 1 "LED" V 548 4782 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 600 4900 50  0001 C CNN
-F 3 "~" H 600 4900 50  0001 C CNN
-F 4 "C181863" H 600 4900 50  0001 C CNN "LCSC"
-	1    600  4900
+P 740 4800
+F 0 "D5" V 779 4682 50  0000 R CNN
+F 1 "LED" V 688 4682 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 740 4800 50  0001 C CNN
+F 3 "~" H 740 4800 50  0001 C CNN
+F 4 "C181863" H 740 4800 50  0001 C CNN "LCSC"
+	1    740  4800
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	600  4450 950  4450
 $Comp
 L power:GND #PWR01
 U 1 1 60585C7C
-P 600 5050
-F 0 "#PWR01" H 600 4800 50  0001 C CNN
-F 1 "GND" H 605 4877 50  0000 C CNN
-F 2 "" H 600 5050 50  0001 C CNN
-F 3 "" H 600 5050 50  0001 C CNN
-	1    600  5050
+P 740 4950
+F 0 "#PWR01" H 740 4700 50  0001 C CNN
+F 1 "GND" H 745 4777 50  0000 C CNN
+F 2 "" H 740 4950 50  0001 C CNN
+F 3 "" H 740 4950 50  0001 C CNN
+	1    740  4950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	950  4450 1400 4450
-Wire Wire Line
-	1400 4450 1400 4600
-Connection ~ 950  4450
-$Comp
-L power:GND #PWR05
-U 1 1 605890D9
-P 1700 4900
-F 0 "#PWR05" H 1700 4650 50  0001 C CNN
-F 1 "GND" H 1705 4727 50  0000 C CNN
-F 2 "" H 1700 4900 50  0001 C CNN
-F 3 "" H 1700 4900 50  0001 C CNN
-	1    1700 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR06
-U 1 1 60589905
-P 2250 4600
-F 0 "#PWR06" H 2250 4450 50  0001 C CNN
-F 1 "+3.3V" H 2265 4773 50  0000 C CNN
-F 2 "" H 2250 4600 50  0001 C CNN
-F 3 "" H 2250 4600 50  0001 C CNN
-	1    2250 4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C4
-U 1 1 6058A86A
-P 2250 4750
-F 0 "C4" H 2365 4796 50  0000 L CNN
-F 1 "22uf" H 2365 4705 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 2288 4600 50  0001 C CNN
-F 3 "~" H 2250 4750 50  0001 C CNN
-F 4 "C319197" H 2250 4750 50  0001 C CNN "LCSC"
-	1    2250 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR07
-U 1 1 6058AAEB
-P 2250 4900
-F 0 "#PWR07" H 2250 4650 50  0001 C CNN
-F 1 "GND" H 2255 4727 50  0000 C CNN
-F 2 "" H 2250 4900 50  0001 C CNN
-F 3 "" H 2250 4900 50  0001 C CNN
-	1    2250 4900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2000 4600 2250 4600
-Connection ~ 2250 4600
 Text Label 2700 1900 0    50   ~ 0
 DTR
 Text Label 2700 1500 0    50   ~ 0
@@ -450,30 +368,6 @@ F 3 "~" H 2650 1300 50  0001 C CNN
 F 4 "C149898" H 2650 1300 50  0001 C CNN "LCSC"
 	1    2650 1300
 	0    1    1    0   
-$EndComp
-$Comp
-L Transistor_BJT:S8050 Q1
-U 1 1 60595F84
-P 3000 750
-F 0 "Q1" H 3190 796 50  0000 L CNN
-F 1 "2N3904S-RTK/PS" H 3190 705 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 3200 675 50  0001 L CIN
-F 3 "http://www.unisonic.com.tw/datasheet/S8050.pdf" H 3000 750 50  0001 L CNN
-F 4 "C18536" H 3000 750 50  0001 C CNN "LCSC"
-	1    3000 750 
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_BJT:S8050 Q2
-U 1 1 6059689E
-P 3000 1300
-F 0 "Q2" H 3190 1346 50  0000 L CNN
-F 1 "2N3904S-RTK/PS" H 3190 1255 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 3200 1225 50  0001 L CIN
-F 3 "http://www.unisonic.com.tw/datasheet/S8050.pdf" H 3000 1300 50  0001 L CNN
-F 4 "C18536" H 3000 1300 50  0001 C CNN "LCSC"
-	1    3000 1300
-	1    0    0    1   
 $EndComp
 Wire Wire Line
 	2450 750  2500 750 
@@ -608,22 +502,6 @@ $EndComp
 Connection ~ 9450 1200
 Text Label 8050 1500 2    50   ~ 0
 EN
-Text Label 5760 910  0    50   ~ 0
-EN
-Text Label 5760 1000 0    50   ~ 0
-IO12
-$Comp
-L Regulator_Linear:AZ1117-3.3 U3
-U 1 1 6057DCFA
-P 1700 4600
-F 0 "U3" H 1700 4720 50  0000 C CNN
-F 1 "SPX1117M3-L-3-3/TR" H 1700 4900 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 1700 4850 50  0001 C CIN
-F 3 "https://www.diodes.com/assets/Datasheets/AZ1117.pdf" H 1700 4600 50  0001 C CNN
-F 4 "C6862" H 1700 4600 50  0001 C CNN "LCSC"
-	1    1700 4600
-	1    0    0    -1  
-$EndComp
 Text Label 9250 2800 0    50   ~ 0
 IO19
 Text Label 9250 2700 0    50   ~ 0
@@ -891,7 +769,7 @@ F 3 "" H 3910 7110 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KisonCommon:ESP32FullConnector U7
+L KisonCommon:ESP32FullConnectorRX U7
 U 1 1 605F623D
 P 5750 1880
 F 0 "U7" H 5560 2304 50  0000 C CNN
@@ -899,34 +777,6 @@ F 1 "ESP32FullConnector" H 5560 2213 50  0000 C CNN
 F 2 "Connector_Molex:Molex_CLIK-Mate_502382-1070_1x10-1MP_P1.25mm_Vertical" H 5750 1880 50  0001 C CNN
 F 3 "" H 5750 1880 50  0001 C CNN
 	1    5750 1880
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR011
-U 1 1 60603F1F
-P 5120 910
-F 0 "#PWR011" H 5120 660 50  0001 C CNN
-F 1 "GND" V 5125 782 50  0000 R CNN
-F 2 "" H 5120 910 50  0001 C CNN
-F 3 "" H 5120 910 50  0001 C CNN
-	1    5120 910 
-	-1   0    0    1   
-$EndComp
-Text Label 5340 1000 2    50   ~ 0
-IO13
-Text Label 5340 1090 2    50   ~ 0
-IO15
-Wire Wire Line
-	5120 910  5340 910 
-$Comp
-L KisonCommon:ESP32FullConnector U4
-U 1 1 60586A77
-P 5740 1120
-F 0 "U4" H 5550 1544 50  0000 C CNN
-F 1 "ESP32FullConnector-KisonCommon" H 5550 1453 50  0000 C CNN
-F 2 "KisonCommon:jtag1.27-10" H 5740 1120 50  0001 C CNN
-F 3 "" H 5740 1120 50  0001 C CNN
-	1    5740 1120
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -940,37 +790,31 @@ F 3 "" H 5130 1670 50  0001 C CNN
 	1    5130 1670
 	-1   0    0    1   
 $EndComp
-Text Label 5350 1760 2    50   ~ 0
+Text Label 5770 1760 0    50   ~ 0
 IO13
-Text Label 5350 1850 2    50   ~ 0
+Text Label 5350 1760 2    50   ~ 0
 IO15
 Wire Wire Line
 	5130 1670 5350 1670
-Text Label 5770 1670 0    50   ~ 0
+Text Label 5770 1940 0    50   ~ 0
 EN
-Text Label 5770 1760 0    50   ~ 0
-IO12
 Text Label 5770 1850 0    50   ~ 0
+IO12
+Text Label 5350 1850 2    50   ~ 0
 IO14
 $Comp
 L power:+3V3 #PWR010
 U 1 1 6061353C
-P 6050 1940
-F 0 "#PWR010" H 6050 1790 50  0001 C CNN
-F 1 "+3V3" H 6065 2113 50  0000 C CNN
-F 2 "" H 6050 1940 50  0001 C CNN
-F 3 "" H 6050 1940 50  0001 C CNN
-	1    6050 1940
-	1    0    0    -1  
+P 5770 1670
+F 0 "#PWR010" H 5770 1520 50  0001 C CNN
+F 1 "+3V3" H 5785 1843 50  0000 C CNN
+F 2 "" H 5770 1670 50  0001 C CNN
+F 3 "" H 5770 1670 50  0001 C CNN
+	1    5770 1670
+	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6050 1940 5770 1940
-Wire Wire Line
-	5770 2030 6170 2030
 Text Notes 4400 610  0    50   ~ 0
 Should we isolate IO0 and rx,tx from Connector to on board?
-Wire Wire Line
-	5350 2030 5040 2030
 $Comp
 L Connector:Conn_01x19_Male J3
 U 1 1 6062632A
@@ -1040,29 +884,6 @@ F 4 "C149898" H 2650 750 50  0001 C CNN "LCSC"
 	1    2650 750 
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5340 1270 5040 1270
-Wire Wire Line
-	5040 1270 5040 2030
-Wire Wire Line
-	5760 1270 6170 1270
-Wire Wire Line
-	6170 1270 6170 2030
-Wire Wire Line
-	6040 1180 5760 1180
-$Comp
-L power:+3V3 #PWR0124
-U 1 1 6059C21E
-P 6040 1180
-F 0 "#PWR0124" H 6040 1030 50  0001 C CNN
-F 1 "+3V3" H 6055 1353 50  0000 C CNN
-F 2 "" H 6040 1180 50  0001 C CNN
-F 3 "" H 6040 1180 50  0001 C CNN
-	1    6040 1180
-	1    0    0    -1  
-$EndComp
-Text Label 5760 1090 0    50   ~ 0
-IO14
 Text Label 9250 1800 0    50   ~ 0
 ESPRX
 Text Label 9250 1600 0    50   ~ 0
@@ -1079,9 +900,9 @@ Text Label 6730 3910 0    50   ~ 0
 ESPTX
 Text Label 6730 4010 0    50   ~ 0
 ESPRX
-Text Label 5040 1270 2    50   ~ 0
+Text Label 5350 2030 2    50   ~ 0
 FT2232TX
-Text Label 6170 1270 0    50   ~ 0
+Text Label 5770 2030 0    50   ~ 0
 FT2232RX
 Text Label 3360 3840 2    50   ~ 0
 ESPRX
@@ -1130,8 +951,6 @@ NoConn ~ 3800 3620
 NoConn ~ 3200 3620
 Text Label 5350 1940 2    50   ~ 0
 IO0
-Text Label 5340 1180 2    50   ~ 0
-IO0
 Text Label 3100 550  0    50   ~ 0
 CP2102_EN
 Text Label 3100 1500 0    50   ~ 0
@@ -1160,4 +979,113 @@ F 4 "C429667" H 3510 3840 50  0001 C CNN "LCSC"
 	1    3510 3840
 	0    1    1    0   
 $EndComp
+$Comp
+L Transistor_BJT:S8050 Q2
+U 1 1 60AFF185
+P 3000 1300
+F 0 "Q2" H 3190 1254 50  0000 L CNN
+F 1 "S8050" H 3190 1345 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3200 1225 50  0001 L CIN
+F 3 "http://www.unisonic.com.tw/datasheet/S8050.pdf" H 3000 1300 50  0001 L CNN
+	1    3000 1300
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:S8050 Q1
+U 1 1 60AFF79D
+P 3000 750
+F 0 "Q1" H 3190 796 50  0000 L CNN
+F 1 "S8050" H 3190 705 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3200 675 50  0001 L CIN
+F 3 "http://www.unisonic.com.tw/datasheet/S8050.pdf" H 3000 750 50  0001 L CNN
+	1    3000 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:XC6206PxxxMR U3
+U 1 1 60B1DBC2
+P 1640 4350
+F 0 "U3" H 1640 4592 50  0000 C CNN
+F 1 "XC6206P332MR" H 1640 4501 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1640 4575 50  0001 C CIN
+F 3 "https://www.torexsemi.com/file/xc6206/XC6206.pdf" H 1640 4350 50  0001 C CNN
+	1    1640 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 60B208A5
+P 1180 4500
+F 0 "C3" H 1295 4546 50  0000 L CNN
+F 1 "1uf" H 1295 4455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1218 4350 50  0001 C CNN
+F 3 "~" H 1180 4500 50  0001 C CNN
+	1    1180 4500
+	1    0    0    -1  
+$EndComp
+Text Label 1180 4350 2    50   ~ 0
+EXT_5V
+Wire Wire Line
+	1340 4350 1180 4350
+$Comp
+L power:GND #PWR0111
+U 1 1 60B282C1
+P 1180 4650
+F 0 "#PWR0111" H 1180 4400 50  0001 C CNN
+F 1 "GND" H 1185 4477 50  0000 C CNN
+F 2 "" H 1180 4650 50  0001 C CNN
+F 3 "" H 1180 4650 50  0001 C CNN
+	1    1180 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 60B2EB00
+P 2040 4500
+F 0 "C4" H 2155 4546 50  0000 L CNN
+F 1 "1uf" H 2155 4455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2078 4350 50  0001 C CNN
+F 3 "~" H 2040 4500 50  0001 C CNN
+	1    2040 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 60B2EB06
+P 2040 4650
+F 0 "#PWR0112" H 2040 4400 50  0001 C CNN
+F 1 "GND" H 2045 4477 50  0000 C CNN
+F 2 "" H 2040 4650 50  0001 C CNN
+F 3 "" H 2040 4650 50  0001 C CNN
+	1    2040 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0113
+U 1 1 60B30D33
+P 2040 4350
+F 0 "#PWR0113" H 2040 4200 50  0001 C CNN
+F 1 "+3.3V" H 2055 4523 50  0000 C CNN
+F 2 "" H 2040 4350 50  0001 C CNN
+F 3 "" H 2040 4350 50  0001 C CNN
+	1    2040 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2040 4350 1940 4350
+Connection ~ 2040 4350
+$Comp
+L power:GND #PWR0114
+U 1 1 60B4DE37
+P 1640 4650
+F 0 "#PWR0114" H 1640 4400 50  0001 C CNN
+F 1 "GND" H 1645 4477 50  0000 C CNN
+F 2 "" H 1640 4650 50  0001 C CNN
+F 3 "" H 1640 4650 50  0001 C CNN
+	1    1640 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	740  4350 1180 4350
+Connection ~ 1180 4350
 $EndSCHEMATC
