@@ -980,24 +980,26 @@ F 4 "C429667" H 3510 3840 50  0001 C CNN "LCSC"
 	0    1    1    0   
 $EndComp
 $Comp
-L Transistor_BJT:S8050 Q2
+L Transistor_BJT:2N3055 Q2
 U 1 1 60AFF185
 P 3000 1300
 F 0 "Q2" H 3190 1254 50  0000 L CNN
-F 1 "S8050" H 3190 1345 50  0000 L CNN
+F 1 "SS8050" H 3190 1345 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 3200 1225 50  0001 L CIN
 F 3 "http://www.unisonic.com.tw/datasheet/S8050.pdf" H 3000 1300 50  0001 L CNN
+F 4 "C541705" H 3000 1300 50  0001 C CNN "LCSC"
 	1    3000 1300
 	1    0    0    1   
 $EndComp
 $Comp
-L Transistor_BJT:S8050 Q1
+L Transistor_BJT:2N3055 Q1
 U 1 1 60AFF79D
 P 3000 750
 F 0 "Q1" H 3190 796 50  0000 L CNN
-F 1 "S8050" H 3190 705 50  0000 L CNN
+F 1 "SS8050" H 3190 705 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 3200 675 50  0001 L CIN
 F 3 "http://www.unisonic.com.tw/datasheet/S8050.pdf" H 3000 750 50  0001 L CNN
+F 4 "C541705" H 3000 750 50  0001 C CNN "LCSC"
 	1    3000 750 
 	1    0    0    -1  
 $EndComp
@@ -1088,4 +1090,6 @@ $EndComp
 Wire Wire Line
 	740  4350 1180 4350
 Connection ~ 1180 4350
+Text Notes 3270 1100 0    50   ~ 0
+Remember to double check the package\nof these BJTs.\nGot me twice already :(
 $EndSCHEMATC
